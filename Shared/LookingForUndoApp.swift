@@ -9,12 +9,17 @@ import SwiftUI
 
 @main
 struct LookingForUndoApp: App {
-    @Environment(\.undoManager) var undoManager
     var body: some Scene {
         DocumentGroup(newDocument: LookingForUndoDocument()) { file in
-            ContentView(document: file.$document).onAppear {
-                print ("UNDO?? \(undoManager)")
-            }
+            ContentView(document: file.$document)
+        }
+        .commands {
+            CommandGroup(replacing: CommandGroupPlacement.pasteboard) {
+                    Button("Delete", action: {
+                        deleteSelectedObject.send()
+                    })
+                    .keyboardShortcut(.delete, modifiers: [])
+                }
         }
     }
 }

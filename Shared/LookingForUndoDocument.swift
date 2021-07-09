@@ -6,30 +6,28 @@
 //
 
 import SwiftUI
+import Combine
 import UniformTypeIdentifiers
 
 extension UTType {
-    static var crazyType: UTType {
+    static var whatever: UTType {
         UTType(importedAs: "com.typoland.panic")
     }
 }
 
-class InsideDoc: Codable {
-    var points: [CGPoint]
-    init (points: [CGPoint] = []) {
-        self.points = points
-    }
-}
+
+let deleteSelectedObject = PassthroughSubject<Void, Never>()
 
 struct LookingForUndoDocument: FileDocument {
-    var insideDoc: InsideDoc
+    
+    var insideDoc: SomeClassInsideDocument
 
     init(points: [CGPoint] = [CGPoint(x: 20, y: 20)]) {
-        self.insideDoc = InsideDoc(points: points)
+        self.insideDoc = SomeClassInsideDocument(points: points)
     }
     
-    static var readableContentTypes: [UTType] { [.crazyType] }
-    static var writableContentTypes: [UTType] { [.crazyType] }
+    static var readableContentTypes: [UTType] { [.whatever] }
+    static var writableContentTypes: [UTType] { [.whatever] }
 
     init(configuration: ReadConfiguration) throws {
         let decoder = JSONDecoder()
@@ -39,7 +37,7 @@ struct LookingForUndoDocument: FileDocument {
         else {
             throw CocoaError(.fileReadCorruptFile)
         }
-        insideDoc = try decoder.decode(InsideDoc.self, from: data)
+        insideDoc = try decoder.decode(SomeClassInsideDocument.self, from: data)
     }
     
     func fileWrapper(configuration: WriteConfiguration) throws -> FileWrapper {

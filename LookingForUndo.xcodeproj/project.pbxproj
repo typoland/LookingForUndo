@@ -21,6 +21,10 @@
 		B283DA1526984CEB00B166FF /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B283DA1326984CEB00B166FF /* CustomView.swift */; };
 		B2ACF5F22698659B005D8888 /* PointsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ACF5F12698659B005D8888 /* PointsViewModel.swift */; };
 		B2ACF5F3269865A1005D8888 /* PointsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ACF5F12698659B005D8888 /* PointsViewModel.swift */; };
+		B2ACF5F52698984B005D8888 /* SomeClassInsideDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ACF5F42698984B005D8888 /* SomeClassInsideDocument.swift */; };
+		B2ACF5F626989871005D8888 /* SomeClassInsideDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ACF5F42698984B005D8888 /* SomeClassInsideDocument.swift */; };
+		B2ACF5F82698A0A2005D8888 /* CGPoint + Extension plus minus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ACF5F72698A0A2005D8888 /* CGPoint + Extension plus minus.swift */; };
+		B2ACF5F92698A0A6005D8888 /* CGPoint + Extension plus minus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ACF5F72698A0A2005D8888 /* CGPoint + Extension plus minus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,8 @@
 		B283D9FC269832F900B166FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B283DA1326984CEB00B166FF /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		B2ACF5F12698659B005D8888 /* PointsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsViewModel.swift; sourceTree = "<group>"; };
+		B2ACF5F42698984B005D8888 /* SomeClassInsideDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeClassInsideDocument.swift; sourceTree = "<group>"; };
+		B2ACF5F72698A0A2005D8888 /* CGPoint + Extension plus minus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint + Extension plus minus.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,9 +115,11 @@
 			children = (
 				B283D9D3269832F800B166FF /* LookingForUndoApp.swift */,
 				B283D9D4269832F800B166FF /* LookingForUndoDocument.swift */,
+				B2ACF5F42698984B005D8888 /* SomeClassInsideDocument.swift */,
 				B2ACF5F12698659B005D8888 /* PointsViewModel.swift */,
 				B283D9D5269832F800B166FF /* ContentView.swift */,
 				B283DA1326984CEB00B166FF /* CustomView.swift */,
+				B2ACF5F72698A0A2005D8888 /* CGPoint + Extension plus minus.swift */,
 				B283D9D6269832F900B166FF /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -321,8 +329,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B283D9FF269832F900B166FF /* LookingForUndoDocument.swift in Sources */,
+				B2ACF5F82698A0A2005D8888 /* CGPoint + Extension plus minus.swift in Sources */,
 				B283DA1426984CEB00B166FF /* CustomView.swift in Sources */,
 				B2ACF5F22698659B005D8888 /* PointsViewModel.swift in Sources */,
+				B2ACF5F52698984B005D8888 /* SomeClassInsideDocument.swift in Sources */,
 				B283D9FD269832F900B166FF /* LookingForUndoApp.swift in Sources */,
 				B283DA01269832F900B166FF /* ContentView.swift in Sources */,
 			);
@@ -333,8 +343,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B283DA00269832F900B166FF /* LookingForUndoDocument.swift in Sources */,
+				B2ACF5F92698A0A6005D8888 /* CGPoint + Extension plus minus.swift in Sources */,
 				B283DA1526984CEB00B166FF /* CustomView.swift in Sources */,
 				B2ACF5F3269865A1005D8888 /* PointsViewModel.swift in Sources */,
+				B2ACF5F626989871005D8888 /* SomeClassInsideDocument.swift in Sources */,
 				B283D9FE269832F900B166FF /* LookingForUndoApp.swift in Sources */,
 				B283DA02269832F900B166FF /* ContentView.swift in Sources */,
 			);

@@ -21,7 +21,7 @@ struct ContentView: View {
 
 
 struct ContentView_Previews: PreviewProvider {
-    static var doc = InsideDoc(points: [CGPoint(x: 30, y: 40)])
+    static var doc = SomeClassInsideDocument(points: [CGPoint(x: 30, y: 40)])
     static var previews: some View {
         CustomView(model: PointsViewModel(insideDoc: doc))
     }
