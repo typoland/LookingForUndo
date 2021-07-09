@@ -17,6 +17,10 @@
 		B283DA02269832F900B166FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B283D9D5269832F800B166FF /* ContentView.swift */; };
 		B283DA03269832F900B166FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B283D9D6269832F900B166FF /* Assets.xcassets */; };
 		B283DA04269832F900B166FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B283D9D6269832F900B166FF /* Assets.xcassets */; };
+		B283DA1426984CEB00B166FF /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B283DA1326984CEB00B166FF /* CustomView.swift */; };
+		B283DA1526984CEB00B166FF /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B283DA1326984CEB00B166FF /* CustomView.swift */; };
+		B2ACF5F22698659B005D8888 /* PointsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ACF5F12698659B005D8888 /* PointsViewModel.swift */; };
+		B2ACF5F3269865A1005D8888 /* PointsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ACF5F12698659B005D8888 /* PointsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,8 @@
 		B283D9F6269832F900B166FF /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B283D9FA269832F900B166FF /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		B283D9FC269832F900B166FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B283DA1326984CEB00B166FF /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		B2ACF5F12698659B005D8888 /* PointsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,8 @@
 			children = (
 				B283D9D3269832F800B166FF /* LookingForUndoApp.swift */,
 				B283D9D4269832F800B166FF /* LookingForUndoDocument.swift */,
+				B2ACF5F12698659B005D8888 /* PointsViewModel.swift */,
+				B283DA1326984CEB00B166FF /* CustomView.swift */,
 				B283D9D5269832F800B166FF /* ContentView.swift */,
 				B283D9D6269832F900B166FF /* Assets.xcassets */,
 			);
@@ -313,6 +321,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B283D9FF269832F900B166FF /* LookingForUndoDocument.swift in Sources */,
+				B283DA1426984CEB00B166FF /* CustomView.swift in Sources */,
+				B2ACF5F22698659B005D8888 /* PointsViewModel.swift in Sources */,
 				B283D9FD269832F900B166FF /* LookingForUndoApp.swift in Sources */,
 				B283DA01269832F900B166FF /* ContentView.swift in Sources */,
 			);
@@ -323,6 +333,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B283DA00269832F900B166FF /* LookingForUndoDocument.swift in Sources */,
+				B283DA1526984CEB00B166FF /* CustomView.swift in Sources */,
+				B2ACF5F3269865A1005D8888 /* PointsViewModel.swift in Sources */,
 				B283D9FE269832F900B166FF /* LookingForUndoApp.swift in Sources */,
 				B283DA02269832F900B166FF /* ContentView.swift in Sources */,
 			);

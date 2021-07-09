@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     @Binding var document: LookingForUndoDocument
 
     var body: some View {
-        TextEditor(text: $document.text)
+        CustomView(model: PointsViewModel(insideDoc: document.insideDoc))
     }
 }
 
