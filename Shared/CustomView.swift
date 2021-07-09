@@ -17,12 +17,19 @@ struct CustomView: View {
                     .frame(width: 10, height: 10, alignment: .center)
                     .position(model.insideDoc.points[index])
                     .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
-                                .onChanged({
-                                            loc in model.insideDoc.points[index] = loc.location
+                                .onChanged{
+                                    loc in model.insideDoc.points[index] = loc.location
                                     model.objectWillChange.send()
-                                }))
+                                })
                 
             }
-        }
+        }.background(Color.black.opacity(0.01))
+        .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
+                    .onEnded{ loc in
+                        model.insideDoc.points.append(loc.location)
+                        model.objectWillChange.send()
+                    }
+                 
+        )
     }
 }

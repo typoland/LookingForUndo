@@ -110,8 +110,8 @@
 				B283D9D3269832F800B166FF /* LookingForUndoApp.swift */,
 				B283D9D4269832F800B166FF /* LookingForUndoDocument.swift */,
 				B2ACF5F12698659B005D8888 /* PointsViewModel.swift */,
-				B283DA1326984CEB00B166FF /* CustomView.swift */,
 				B283D9D5269832F800B166FF /* ContentView.swift */,
+				B283DA1326984CEB00B166FF /* CustomView.swift */,
 				B283D9D6269832F900B166FF /* Assets.xcassets */,
 			);
 			path = Shared;

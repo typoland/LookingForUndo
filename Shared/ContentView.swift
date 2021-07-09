@@ -10,14 +10,19 @@ import SwiftUI
 struct ContentView: View {
     
     @Binding var document: LookingForUndoDocument
-
+    
     var body: some View {
         CustomView(model: PointsViewModel(insideDoc: document.insideDoc))
+            
+        
     }
+    
 }
 
+
 struct ContentView_Previews: PreviewProvider {
+    static var doc = InsideDoc(points: [CGPoint(x: 30, y: 40)])
     static var previews: some View {
-        ContentView(document: .constant(LookingForUndoDocument()))
+        CustomView(model: PointsViewModel(insideDoc: doc))
     }
 }
