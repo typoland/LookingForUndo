@@ -58,7 +58,7 @@
                                                     model.insideDoc.points[index] = now
                                                     model.objectWillChange.send()
                                                 })
-                                                undoManager?.setActionName("undo Drag")
+                                                undoManager?.setActionName("drag Point")
                                             }
                                             model.insideDoc.points[index] = drag.location - dragOffsetDelta
                                         }
@@ -84,6 +84,7 @@
                                     model.selectionIndex = previousIndex
                                     model.objectWillChange.send()
                                 })
+                                undoManager?.setActionName("add Point")
                                 model.insideDoc.points.append(loc.location)
                                 model.selectionIndex = model.insideDoc.points.count - 1
                                 model.objectWillChange.send()
