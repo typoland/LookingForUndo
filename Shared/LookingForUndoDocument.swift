@@ -21,9 +21,11 @@ let deleteSelectedObject = PassthroughSubject<Void, Never>()
 struct LookingForUndoDocument: FileDocument {
     
     var insideDoc: SomeClassInsideDocument
-
+    @Environment(\.undoManager) var undoManager
+    var myUndoManager = UndoManager()
     init(points: [CGPoint] = [CGPoint(x: 20, y: 20)]) {
         self.insideDoc = SomeClassInsideDocument(points: points)
+        
     }
     
     static var readableContentTypes: [UTType] { [.whatever] }
@@ -46,5 +48,4 @@ struct LookingForUndoDocument: FileDocument {
         return .init(regularFileWithContents: data)
     }
     
-    var undoManager: UndoManager?
 }

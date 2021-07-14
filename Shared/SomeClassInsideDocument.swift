@@ -9,6 +9,7 @@ import Foundation
 
 class SomeClassInsideDocument: Codable {
     var points: [CGPoint]
+    
     init (points: [CGPoint] = []) {
         self.points = points
     }

@@ -8,17 +8,16 @@
 import Foundation
 class PointsViewModel: ObservableObject {
     
+    
     @Published var insideDoc: SomeClassInsideDocument
+    @Published var selectionIndex: Int?
+    
     init (insideDoc: SomeClassInsideDocument) {
         self.insideDoc = insideDoc
     }
-    var undoManager: UndoManager?
     
     func movePoint(index: Int, to point: CGPoint) {
         insideDoc.points[index] = point
         objectWillChange.send()
-    }
-    func testUM() {
-        print ("UndoManager in ViewModel \(undoManager)")
     }
 }
